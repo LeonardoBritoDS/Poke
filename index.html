@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex de Kanto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="top"><div class="wrap"><a href="#" class="brand"><span class="ball" aria-hidden="true"></span> Pokédex de Kanto</a><a href="https://pokeapi.co/docs/v2">PokéAPI ↗</a></div></header>
+  <main>
+    <section class="hero"><div class="wrap">
+      <p class="region">REGIÃO DE KANTO</p>
+      <h1>Os 151 primeiros<br> Pokémon</h1>
+      <p>Explore os Pokémon que marcaram as primeiras temporadas do desenho e descubra o tipo, a altura e o peso de cada um.</p>
+      <span class="ball watermark" aria-hidden="true"></span>
+    </div></section>
+    <section class="wrap catalogue" aria-labelledby="catalogue-title">
+      <div class="toolbar">
+        <h2 id="catalogue-title">Catálogo</h2>
+        <div><label for="search">Buscar por nome ou número</label><input id="search" type="search" placeholder="Ex. Pikachu ou 025" disabled></div>
+      </div>
+      <p id="notice" role="status">Carregando Pokédex…</p>
+      <button id="retry" type="button" hidden>Tentar novamente</button>
+      <div id="cards" class="cards" aria-busy="true"></div>
+      <nav id="pagination" aria-label="Páginas do catálogo" hidden>
+        <button id="previous" type="button">Anterior</button>
+        <span id="page"></span>
+        <button id="next" type="button">Próxima</button>
+      </nav>
+      <noscript>Ative o JavaScript para carregar os Pokémon.</noscript>
+    </section>
+  </main>
+  <footer class="wrap">Projeto acadêmico · Dados e imagens via <a href="https://pokeapi.co/">PokéAPI</a></footer>
+</body>
+</html>
